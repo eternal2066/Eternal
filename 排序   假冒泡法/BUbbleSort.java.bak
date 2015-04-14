@@ -1,0 +1,25 @@
+public class BUbbleSort
+ 
+{
+	public static void main(String[] args) 
+	{
+		int i,j;
+		int intArray[]={235,-65,70,35,97};
+		int len=intArray.length;//输出派序前的数组
+		for(i=0;i<len;i++)
+        System.out.println(intArray[i]+" ");
+       System.out.println();
+	   //排序
+	   for(i=0;i<len-1;i++)
+		   for(j=i+1;j<len;j++)
+		   if(intArray[i]>intArray[j])
+		{
+	      int t=intArray[i];
+		  intArray[i]=intArray[j];
+		  intArray[j]=t;
+	   }
+	   //输出排序后的数组
+	   for(i=0;i<len;i++)
+		System.out.println(intArray[i]+"  ");
+	}
+}
